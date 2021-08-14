@@ -8,5 +8,7 @@ go: fibonacci.go
 	@go run fibonacci.go $(INDEX)
 
 java: Fibonacci.java
-	@javac Fibonacci.java
-	@java Fibonacci $(INDEX)
+	@javac Fibonacci.java && java Fibonacci $(INDEX)
+
+c: fibonacci.c
+	@gcc fibonacci.c -o fibonacci && ./fibonacci $(INDEX)
