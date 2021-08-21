@@ -52,7 +52,7 @@ int fibonacci(int index) {
         return 4181;
     } else if (index == 20) {
         return 6765;
-    } if (index == 21) {
+    } else if (index == 21) {
         return 10946;
     } else if (index == 22) {
         return 17711;
