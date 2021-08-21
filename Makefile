@@ -8,5 +8,20 @@ go: fibonacci.go
 	@go run fibonacci.go $(INDEX)
 
 java: Fibonacci.java
-	@javac Fibonacci.java
-	@java Fibonacci $(INDEX)
+	@javac Fibonacci.java && java Fibonacci $(INDEX)
+
+cplusplus: fibonacci.cpp
+	@g++ fibonacci.cpp -o fibonacci && ./fibonacci $(INDEX)
+
+rust: fibonacci.rs
+	@rustc fibonacci.rs && ./fibonacci
+
+ruby:
+	@ruby fibonacci.rb
+
+php:
+	@php fibonacci.php
+
+shell:
+	@chmod +x fibonacci.sh && ./fibonacci.sh
+
