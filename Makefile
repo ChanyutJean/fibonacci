@@ -14,14 +14,14 @@ cplusplus: fibonacci.cpp
 	@g++ fibonacci.cpp -o fibonacci && ./fibonacci $(INDEX)
 
 rust: fibonacci.rs
-	@rustc fibonacci.rs && ./fibonacci
+	@rustc fibonacci.rs && ./fibonacci $(INDEX)
 
 ruby:
-	@ruby fibonacci.rb
+	@ruby fibonacci.rb $(INDEX)
 
 php:
-	@php fibonacci.php
+	@php fibonacci.php $(INDEX)
 
 shell:
-	@chmod +x fibonacci.sh && ./fibonacci.sh
+	@bash fibonacci.sh $(INDEX)
 
