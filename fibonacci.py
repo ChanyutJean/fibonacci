@@ -11,8 +11,8 @@ def fibonacci(index):
     return fibonacci(index - 1) + fibonacci(index - 2)
 
 def assert_index(index):
-    if index < 1 or index > 30:
-        raise Exception("Index must be a positive integer between 1 and 30.")
+    if index < 1 or index > 32:
+        raise Exception("Index must be a positive integer between 1 and 32.")
 
 main()
     
