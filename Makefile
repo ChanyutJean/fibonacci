@@ -22,6 +22,6 @@ ruby:
 php:
 	@php fibonacci.php $(INDEX)
 
-shell:
+bash:
 	@bash fibonacci.sh $(INDEX)
 
