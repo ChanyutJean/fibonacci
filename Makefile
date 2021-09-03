@@ -25,3 +25,9 @@ php:
 bash:
 	@bash fibonacci.sh $(INDEX)
 
+perl:
+
+lua:
+
+haskell:
+
