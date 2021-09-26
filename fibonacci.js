@@ -18,8 +18,8 @@ function fibonacci(index) {
 }
 
 function assertIndex(index) {
-    if (index < 1 || index > 127) {
-        throw new Error('Index must be a positive integer between 1 and 127.')
+    if (index < 1 || index > 99999) {
+        throw new Error('Index must be a positive integer between 1 and 99999.')
     }
 }
 
