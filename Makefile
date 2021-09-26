@@ -25,3 +25,10 @@ php:
 bash:
 	@bash fibonacci.sh $(INDEX)
 
+perl:
+	@perl fibonacci.pl $(INDEX)
+
+lua:
+
+haskell:
+

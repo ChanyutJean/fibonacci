@@ -7,16 +7,16 @@ In this repository, you can build and use docker images to run the program witho
 The following indicates programming languages available and their respective index support. Fibonacci index must be a positive integer from 1 to the specified number.
 ```
    32 python
-    * javascript
+99999 javascript
 32766 go
-    * java
-    * cplusplus
+  127 java
+   46 cplusplus
    30 rust
-    - ruby
+   25 ruby
     - php
    92 bash
     - haskell
-    - perl
+   28 perl
     - lua
 ```
 
