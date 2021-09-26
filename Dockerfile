@@ -11,7 +11,6 @@ RUN apk add nginx php7 php7-fpm php7-opcache
 RUN apk add sbcl
 RUN apk add ghc
 RUN apk add nginx-mod-http-lua
-RUN apk add perl
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
 ENV PATH="$JAVA_HOME/bin:${PATH}"
 COPY . .
