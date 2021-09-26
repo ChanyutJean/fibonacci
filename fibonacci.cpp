@@ -1,16 +1,6 @@
 #include <iostream>
 using namespace std;
 
-int main(int argc, char const *argv[]) {
-    int index = atoi(argv[1]);
-    if (index < 1 || index > 46) {
-        printf("Index must be a positive integer between 1 and 46.");
-        return 1;
-    }
-    cout << (fibonacci(index)) << endl;
-    return 0;
-}
-
 int fibonacci(int index) {
     if (index == 1) {
         return 1;
@@ -107,4 +97,14 @@ int fibonacci(int index) {
     } else {
         return -1;
     }
+}
+
+int main(int argc, char const *argv[]) {
+    int index = atoi(argv[1]);
+    if (index < 1 || index > 46) {
+        printf("Index must be a positive integer between 1 and 46.");
+        return 1;
+    }
+    cout << (fibonacci(index)) << endl;
+    return 0;
 }
