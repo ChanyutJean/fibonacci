@@ -15,5 +15,5 @@ RUN apk add clisp
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
 ENV PATH="$JAVA_HOME/bin:${PATH}"
 COPY . .
-#RUN ghc --make fibonacci
+RUN ghc --make fibonacci
 CMD make $LANGUAGE INDEX=$INDEX
