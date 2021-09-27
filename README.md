@@ -13,11 +13,12 @@ The following indicates programming languages available and their respective ind
    46 cplusplus
    30 rust
    25 ruby
-    - php
+   92 php
    92 bash
-    - haskell
+99999 haskell
    28 perl
     - lua
+    - commonlisp
 ```
 
 ### Example execution (returns 55):
