@@ -1,5 +1,6 @@
 fn main() {
-    let index: i128 = 30;
+    let args: Vec<String> = std::env::args().collect();
+    let index: i128 = args[1].parse().unwrap();
     assert_index(index);
     println!("{}", fibonacci(index));
 }
