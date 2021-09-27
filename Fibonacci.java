@@ -2,18 +2,14 @@ import java.math.BigInteger;
 
 class Fibonacci {
     public static void main(String[] args) {
-        byte index = Byte.valueOf(args[0]);
+        int index = Integer.valueOf(args[0]);
         assertIndex(index);
         System.out.println(fibonacci(index)); 
     }
 
-    private static BigInteger fibonacci(byte index) {
+    private static BigInteger fibonacci(int index) {
         BigInteger[][] initial = initiateMatrix();
-        BigInteger[][] current = initiateMatrix();
-        for (byte i = 2; i < index; i++) {
-            current = multiply(current, initial);
-        }
-        return current[0][0];
+        return exponentiate(initial, index - 1)[0][0];
     }
 
     private static BigInteger[][] initiateMatrix() {
@@ -29,9 +25,23 @@ class Fibonacci {
         return new BigInteger[][] {{ topLeft, topRight }, { bottomLeft, bottomRight }};
     }
 
-    private static void assertIndex(byte index) {
-        if (index < 1) {
-            throw new RuntimeException("Index must be a positive integer.");
+    private static BigInteger[][] square(BigInteger[][] base) {
+        return multiply(base, base);
+    }
+
+    private static BigInteger[][] exponentiate(BigInteger[][] base, int exponent) {
+        if (exponent == 1) {
+            return base;
+        } else if (exponent % 2 == 1) {
+            return multiply(base, exponentiate(square(base), (exponent - 1) / 2));
+        } else {
+            return exponentiate(square(base), (exponent / 2));
+        }
+    }
+
+    private static void assertIndex(int index) {
+        if (index < 1 || index > 99999) {
+            throw new RuntimeException("Index must be a positive integer between 1 and 99999.");
         }
     }
 }

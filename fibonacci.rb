@@ -45,5 +45,5 @@ class Fibonacci
     end
 end
 
-f = Fibonacci.new(25)
+f = Fibonacci.new(ARGV[0].to_i)
 f.evaluate()
