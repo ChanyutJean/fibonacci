@@ -29,6 +29,11 @@ perl:
 	@perl fibonacci.pl $(INDEX)
 
 lua:
+	@lua fibonacci.lua $(INDEX)
 
 haskell:
+	@./fibonacci $(INDEX)
+
+commonlisp:
+	@clisp fibonacci.lisp $(INDEX)
 
